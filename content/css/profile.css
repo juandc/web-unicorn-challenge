@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Dosis-ExtraLight';
+  src: url('../fonts/Dosis/Dosis-ExtraLight.ttf');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dosis-Light';
+  src: url('../fonts/Dosis/Dosis-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dosis-Regular';
+  src: url('../fonts/Dosis/Dosis-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dosis-Medium';
+  src: url('../fonts/Dosis/Dosis-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dosis-SemiBold';
+  src: url('../fonts/Dosis/Dosis-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dosis-Bold';
+  src: url('../fonts/Dosis/Dosis-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dosis-ExtraBold';
+  src: url('../fonts/Dosis/Dosis-ExtraBold.ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 3fr 5fr;
+  grid-template-areas: "panel header"
+                       "panel  hero";
+}
+
+.panel {
+  grid-area: panel;
+  background-color: white;
+  color: gray;
+}
+
+.panel ul {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  list-style: none;
+  display: grid;
+  grid-template-rows: 100px 1fr repeat(4, 60px) 40px;
+  /* grid-template-areas: "link1" "link2" "link3" "." "link4"; */
+}
+
+.panel li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
