@@ -1,8 +1,8 @@
 # Reto del Curso Profesional de Desarrollo Web
 
-Publicación del reto: https://platzi.com/blog/web-unicorn-challenge/
+Publicación del reto: <a src="https://platzi.com/blog/web-unicorn-challenge/" target="_blank"></a>
 
-<img src="/SitioUnicornioWebProfesional.png" target="_blank"/>
+<img src="/SitioUnicornioWebProfesional.png"/>
 
 ## Puntos extra
 
