@@ -1,4 +1,4 @@
-# :unicorn: Reto del Curso Profesional de Desarrollo Web
+# Reto del Curso Profesional de Desarrollo Web
 
 <img src="/SitioUnicornioWebProfesional.png" />
 
