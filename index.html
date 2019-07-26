@@ -4,60 +4,212 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="content/css/profile.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <title>UWP</title>
 </head>
-<body>
-  <div class="container">
-    <section class="panel">
+<body data-spy="scroll" data-target="#navbar" data-offset="59">
+  <div id="section1"  class="container-custom">
+    <section class="panel d-flex justify-content-center">
         <ul>
             <li class="link1">
-                <img src="" alt="iconSitio"/>
+                <img src="content/images/unicorn.png" alt="iconSitio"/>
             </li>
+            <li></li>
             <li class="link2">
-                <i class="icon-linkedin"></i>
+                <a id="icon-linkedin" class="icon-linkedin" href="https://www.linkedin.com/in/mvalverdedev/" target="_blank"></a>
             </li>
             <li class="link3">
-                <i class="icon-github"></i>
+                <a id="icon-github" class="icon-github" href="https://github.com/mvalverdedev" target="_blank"></a>
             </li>
             <li class="link4">
-                <i class="icon-twitter"></i>
+                <a id="icon-twitter" class="icon-twitter" href="https://twitter.com/mvalverdedev" target="_blank"></a>
             </li>
             <li class="link5">
-                <i class="icon-platzi"></i>
+              <a id="icon-platzi" class="icon-platzi" href="https://platzi.com/@mvalverdedev/" target="_blank">
+                <div class="icon-platzi-top"></div>
+                <div class="icon-platzi-bottom"></div>
+              </a>
             </li>
         </ul>
     </section>
-    <section class="header">
-        <nav id="navbar-example2" class="navbar navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <ul class="nav nav-pills">
+    <nav class="header navbar navbar-expand-lg navbar-light bg-white sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-none" href="#">
+          <img src="content/images/unicorn.png" alt="iconSitio">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#fat">@fat</a>
+              <a class="nav-link" href="#section1">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#mdo">@mdo</a>
+              <a class="nav-link" href="#section2">Sobre mí</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#one">one</a>
-                <a class="dropdown-item" href="#two">two</a>
-                <div role="separator" class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#three">three</a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#section3">Portafolio</a>
+            </li>
+            <li class="nav-item">
+              <a id="workTogether" class="nav-link" href="#contact">Trabajemos juntos</a>
             </li>
           </ul>
-        </nav>
-
-      <img src="" alt="img-profile">
+        </div>
+      </div>
+    </nav>
+    <section class="home">
+      <h1>Unicornio Web <br> Profesional</h1>
+      <div class="home-img d-flex justify-content-center align-items-center">
+        <img src="content/images/profile.png" alt="img-profile">
+      </div>
     </section>
-    <div class="hero"></div>
+    <section class="hero">
+      <div id="carouselSkillsControls" class="skills-carousel carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselSkillsControls" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselSkillsControls" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner d-flex align-items-center">
+          <div class="carousel-item active">
+            <div class="skills">
+              <div class="skills-item row m-0 p-3">
+                <div class="col-2 p-0 d-flex justify-content-center align-items-center">
+                  <img src="content/images/development.png" alt="imgDevelopment">
+                </div>
+                <div class="col pr-0 d-flex flex-column justify-content-center">
+                  <h3 class="skill-item-title">Desarrollo Web</h3>
+                  <p class="skill-item-detail m-0">HTML + CSS + Responsive Design</p>
+                </div>
+              </div>
+              <div class="skills-item row m-0 p-3">
+                <div class="col-2 p-0 d-flex justify-content-center align-items-center">
+                  <img src="content/images/design.png" alt="imgDesign">
+                </div>
+                <div class="col pr-0 d-flex flex-column justify-content-center">
+                  <h3 class="skill-item-title">Diseño Web</h3>
+                  <p class="skill-item-detail m-0">UI/UX + Adobe XD/Figma + Zeplin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="skills">
+              <div class="skills-item row m-0 p-3">
+                <div class="col-2 p-0 d-flex justify-content-center align-items-center">
+                  <img src="content/images/development.png" alt="imgDevelopment">
+                </div>
+                <div class="col pr-0 d-flex flex-column justify-content-center">
+                  <h3 class="skill-item-title">Desarrollo Web</h3>
+                  <p class="skill-item-detail m-0">HTML + CSS + Responsive Design</p>
+                </div>
+              </div>
+              <div class="skills-item row m-0 p-3">
+                <div class="col-2 p-0 d-flex justify-content-center align-items-center">
+                  <img src="content/images/design.png" alt="imgDesign">
+                </div>
+                <div class="col pr-0 d-flex flex-column justify-content-center">
+                  <h3 class="skill-item-title">Diseño Web</h3>
+                  <p class="skill-item-detail m-0">UI/UX + Adobe XD/Figma + Zeplin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="section2"></div>
+      <div id="about" class="about">
+        <h2>Sobre mí</h2>
+        <div class="skills-item p-3">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quo libero, doloribus quae repudiandae, neque, odit corrupti illo alias commodi est rerum voluptates molestiae dolorem! Cupiditate maiores fugiat debitis odit?</p>
+        </div>
+      </div>
+      <div class="rocket">
+        <img src="content/images/rocket.png" alt="imgRocket">
+      </div>
+      <div id="section3"></div>
+      <div class="portfolio">
+        <div class="portfolio-title">
+          <h2 class="text-center m-0">Portafolio</h2>
+          <h3 class="text-center">(Proyectos)</h3>
+        </div>
+        <div class="portfolio-areaItems">
+          <div class="portfolio-items row d-flex justify-content-around">
+            <article class="portfolio-item p-0 m-2 col-5 d-flex justify-content-center align-items-center">
+              <img src="content/images/SitioMovie.png" alt="imgSitioMovie"/>
+              <span class="portfolio-item-overlay">
+                  <a class="portfolio-item-link" href="https://github.com/mvalverdedev/sitio-trailers" target="_blank">Ver el código fuente</a>
+              </span>
+            </article>
+            <article class="portfolio-item p-0 m-2 col-5 d-flex justify-content-center align-items-center">
+              <img src="content/images/PracticaAnimaciones.gif" alt="gifPracticaAnimaciones">
+              <span class="portfolio-item-overlay">
+                  <a class="portfolio-item-link" href="https://github.com/mvalverdedev/practica-animaciones" target="_blank">Ver el código fuente</a>
+              </span>
+            </article>
+            <article class="portfolio-item p-0 m-2 col-5 d-flex justify-content-center align-items-center">
+              <img src="content/images/Transformaciones.gif" alt="gifTransformaciones">
+              <span class="portfolio-item-overlay">
+                  <a class="portfolio-item-link" href="https://github.com/mvalverdedev/practica-animaciones" target="_blank">Ver el código fuente</a>
+              </span>
+            </article>
+            <article class="portfolio-item p-0 m-2 col-5 d-flex justify-content-center align-items-center">
+              <img src="content/images/Animations.gif" alt="gifAnimaciones">
+              <span class="portfolio-item-overlay">
+                  <a class="portfolio-item-link" href="https://github.com/mvalverdedev/practica-animaciones" target="_blank">Ver el código fuente</a>
+              </span>
+            </article>
+            <div class="collapse" id="collapseItems">
+              <div class=" portfolio-items row d-flex justify-content-around">
+                <article class="portfolio-item p-0 m-2 col-5 d-flex justify-content-center align-items-center">
+                  <img src="content/images/SitioMovie.png" alt="imgSitioMovie">
+                  <span class="portfolio-item-overlay">
+                      <a class="portfolio-item-link" href="https://github.com/mvalverdedev/sitio-trailers" target="_blank">Ver el código fuente</a>
+                  </span>
+                </article>
+                <article class="portfolio-item p-0 m-2 col-5 d-flex justify-content-center align-items-center">
+                  <img src="content/images/PracticaAnimaciones.gif" alt="gifPracticaAnimaciones">
+                  <span class="portfolio-item-overlay">
+                      <a class="portfolio-item-link" href="https://github.com/mvalverdedev/practica-animaciones" target="_blank">Ver el código fuente</a>
+                  </span>
+                </article>
+                <article class="portfolio-item p-0 m-2 col-5 d-flex justify-content-center align-items-center">
+                  <img src="content/images/Transformaciones.gif" alt="gifTransformaciones">
+                  <span class="portfolio-item-overlay">
+                      <a class="portfolio-item-link" href="https://github.com/mvalverdedev/practica-animaciones" target="_blank">Ver el código fuente</a>
+                  </span>
+                </article>
+                <article class="portfolio-item p-0 m-2 col-5 d-flex justify-content-center align-items-center">
+                  <img src="content/images/Animations.gif" alt="gifAnimaciones">
+                  <span class="portfolio-item-overlay">
+                      <a class="portfolio-item-link" href="https://github.com/mvalverdedev/practica-animaciones" target="_blank">Ver el código fuente</a>
+                  </span>
+                </article>
+              </div>
+            </div>
+            <button class="btn btn-primary col-12 m-2" type="button" data-toggle="collapse" data-target="#collapseItems" aria-expanded="false" aria-controls="collapseItems">
+              <span id="collapse-item-btn">Ver más proyectos</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="contact mt-3 d-flex flex-column align-items-center justify-content-center">
+        <h2 class="contact-title">¿Creamos algo juntos?</h2>
+        <p>Gracias por detenerte, y espero que hayas disfrutado mi trabajo. Siéntete libre de contactarme.</p>
+      </div>
+      <footer id="footer" class="footer d-flex align-items-center">
+        <div class="container d-flex justify-content-around">
+          <p class="m-0 d-inline-block">Inspired by the design of <a href="https://platzi.com/@juandc" target="_blank">@juande</a></p>
+          <p class="m-0 d-inline-block">Developed <a href="http://www.mvalverdedev.com" target="_blank">@me</a></p>
+        </div>
+      </footer>
+    </section>
   </div>  
-  <script src="content/scripts/profile.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="content/scripts/profile.js"></script>
 </body>
 </html>

@@ -1,80 +1,93 @@
 @font-face {
-  font-family: 'Dosis-ExtraLight';
-  src: url('../fonts/Dosis/Dosis-ExtraLight.ttf');
-  font-weight: 200;
+  font-family: 'icomoon';
+  src:  url('../fonts/Icomoon/icomoon.eot?za90iy');
+  src:  url('../fonts/Icomoon/icomoon.eot?za90iy#iefix') format('embedded-opentype'),
+    url('../fonts/Icomoon/icomoon.ttf?za90iy') format('truetype'),
+    url('../fonts/Icomoon/icomoon.woff?za90iy') format('woff'),
+    url('../fonts/Icomoon/icomoon.svg?za90iy#icomoon') format('svg');
+  font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Dosis-Light';
-  src: url('../fonts/Dosis/Dosis-Light.ttf');
-  font-weight: 300;
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
   font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@font-face {
-  font-family: 'Dosis-Regular';
-  src: url('../fonts/Dosis/Dosis-Regular.ttf');
-  font-weight: 400;
-  font-style: normal;
+.icon-twitter:before {
+  content: "\e900";
+}
+.icon-github:before {
+  content: "\e901";
+}
+.icon-linkedin:before {
+  content: "\e902";
 }
 
-@font-face {
-  font-family: 'Dosis-Medium';
-  src: url('../fonts/Dosis/Dosis-Medium.ttf');
-  font-weight: 500;
-  font-style: normal;
+.icon-platzi{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  transform: rotate(45deg);
 }
-
-@font-face {
-  font-family: 'Dosis-SemiBold';
-  src: url('../fonts/Dosis/Dosis-SemiBold.ttf');
-  font-weight: 600;
-  font-style: normal;
+.icon-platzi-top{
+  width: 80%;
+  height: 65%;
+  border: 8px solid #5D5C70;
+  border-radius: 10px 10px 0 0;
+  border-bottom: none;
+  box-sizing: border-box;
+  position: relative;
+  top: 1px;
 }
-
-@font-face {
-  font-family: 'Dosis-Bold';
-  src: url('../fonts/Dosis/Dosis-Bold.ttf');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Dosis-ExtraBold';
-  src: url('../fonts/Dosis/Dosis-ExtraBold.ttf');
-  font-weight: 800;
-  font-style: normal;
+.icon-platzi-bottom{
+  width: 100%;
+  height: 35%;
+  border: 8px solid #5D5C70;
+  border-radius: 0 0 10px 10px;
+  border-top: none;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
 }
 
-.container {
-  height: 100vh;
+.container-custom {
   width: 100%;
   display: grid;
   grid-template-columns: 100px 1fr;
-  grid-template-rows: 3fr 5fr;
+  grid-template-rows: 59px 160px 1fr;
   grid-template-areas: "panel header"
-                       "panel  hero";
+                       "panel home"
+                       "panel hero";
 }
 
 .panel {
   grid-area: panel;
   background-color: white;
-  color: gray;
+  box-shadow: 3px 0px 6px lightgrey;
+  z-index: 1021;
 }
 
 .panel ul {
+  position: fixed;
   margin: 0;
   padding: 0;
   height: 100%;
   list-style: none;
   display: grid;
   grid-template-rows: 100px 1fr repeat(4, 60px) 40px;
-  /* grid-template-areas: "link1" "link2" "link3" "." "link4"; */
 }
 
 .panel li {
@@ -82,5 +95,353 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  cursor: pointer;
+}
+
+.icon-linkedin, .icon-github, .icon-twitter, .icon-platzi {
+  color: #5D5C70;
+  font-size: 40px;
+  display: block;
+}
+
+.icon-linkedin:hover, .icon-github:hover, .icon-twitter:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.icon-platzi:hover .icon-platzi-top,
+.icon-platzi:hover .icon-platzi-bottom {
+  border-color: #0056b3;
+}
+
+.header {
+  grid-area: header;
+}
+
+.home {
+  grid-area: home;
+  position: relative;
+  box-shadow: 6px 4px 6px lightgrey;
+}
+
+.navbar-brand img {
+  height: 30px;
+  width: 30px;
+}
+
+.nav-link {
+  font-family: 'Dosis', sans-serif;
+  color: #5D5C70 !important;
+  font-size: 18px;
+}
+
+.nav-link.active {
+  font-weight: bold
+}
+
+.home h1 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-left: 150px;
+}
+
+.home-img {
+  background: #E72240;
+  width: 340px;
+  height: 300px;
+  border-radius: 10px;
+  position: absolute;
+  right: 135px;
+  bottom: -150px;
+  box-shadow: 0px 6px 6px lightgrey;
+}
+
+.hero {
+  grid-area: hero;
+  display: inherit;
+  grid-template-columns: 7fr 5fr;
+  grid-template-rows: 420px 59px 370px 59px 1fr 370px 50px;
+  grid-template-areas: "skills    rocket"
+                       "section2  rocket"
+                       "about     rocket"
+                       "section3  section3"
+                       "portfolio portfolio"
+                       "contact   contact"
+                       "footer    footer";
+  background-color: #F8FCFF;
+}
+
+.skills-carousel {
+  grid-area: skills;
+  display: inherit;
+  grid-template-columns: 50px 1fr 50px;
+  grid-template-areas: "carousel-control-prev carousel-inner carousel-control-next";
+  height: 420px;
+}
+
+.carousel-inner {
+  grid-area: carousel-inner;
+}
+
+.carousel-indicators li {
+  background-color: #5D5C70 !important;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 60px repeat(4, 1fr) 60px;
+  grid-template-rows: 1fr 2fr 50px 2fr 1fr;
+}
+
+.carousel-control-prev {
+  grid-area: carousel-control-prev;
+  width: 100% !important;
+  background: lightgray;
+}
+
+.carousel-control-next {
+  grid-area: carousel-control-next;
+  width: 100% !important;
+  background: lightgray;
+}
+
+.skills-item {
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 5px lightgrey;
+  background-color: white;
+}
+
+.skills-item:nth-child(odd) {
+  grid-column: 2 / span 3;
+  grid-row: 2 / span 1;
+}
+
+.skills-item:nth-child(even) {
+  grid-column: 3 / span 3;
+  grid-row: 4 / span 1;
+}
+
+.skill-item-title {
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+}
+
+.skill-item-detail {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.3rem;
+}
+
+#section2 {
+  grid-area: section2;
+}
+
+.about {
+  grid-area: about;
+  margin-left: 110px;
+  margin-right: 110px;
+}
+
+.about h2 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.rocket {
+  grid-area: rocket;
+  position: relative;
+}
+
+.rocket img{
+  position: absolute;
+  left: 80px;
+  top: 300px;
+  animation-name: rocketMoving;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+}
+
+#section3 {
+  grid-area: section3;
+}
+
+.portfolio {
+  grid-area: portfolio;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas: "portfolio-title"
+                       "portfolio-areaItems";
+}
+
+.portfolio-title {
+  grid-area: portfolio-title;
+  font-family: 'Dosis', sans-serif;
+}
+
+.portfolio-title h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.portfolio-title h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.portfolio-areaItems {
+  grid-area: portfolio-areaItems;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-areas: ". portfolio-items .";
+}
+
+.portfolio-items {
+  grid-area: portfolio-items;
+  height: fit-content;
+}
+
+.portfolio-item {
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden; 
+  border: 1px solid lightgray;
+  box-shadow: 0px 6px 6px lightgrey;
+  position: relative;
+}
+
+.portfolio-item img {
+  width: 350px;
+  height: 200px;
+}
+
+.portfolio-item-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(33, 37, 41, 0.8);
+  display: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.portfolio-item-overlay a {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 6px;
+  margin-bottom: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.portfolio-item-overlay a, .portfolio-item-overlay a:hover {
+  color: white;
+}
+
+.portfolio-item:hover .portfolio-item-overlay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  grid-area: contact;
+  font-family: 'Dosis', sans-serif;
+  background-color: white;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.contact p {
+  font-size: 1.5rem;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #E72240;
+  color: white;
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+}
+
+.footer a, .footer a:hover {
+  color: white;
+}
+
+.zoom-icon {
+  animation-name: zoom;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+}
+
+.zoom-icon-platzi {
+  animation-name: zoom-platzi;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoom-platzi {
+  0% {
+    transform: scale(1) rotate(45deg);
+  }
+  50% {
+    transform: scale(1.3) rotate(45deg);
+  }
+  100% {
+    transform: scale(1) rotate(45deg);
+  }
+}
+
+@keyframes rocketMoving {
+  0% {
+    transform: rotate(-360deg);
+    transform-origin: right;
+    top: 300px;
+    left: 80px;
+  }
+  21% {
+    transform: rotate(-225deg);
+    top: 300px;
+    left: 100px;
+  }
+  42% {
+    transform: rotate(-225deg);
+    top: 600px;
+    left: 100px;
+  }
+  63% {
+    transform: rotate(-45deg);
+    top: 600px;
+    left: 0px;
+  }
+  90%{
+    transform: rotate(-45deg);
+    top: 300px;
+    left: 0px;
+  }
+  100% {
+    transform: rotate(0deg);
+    transform-origin: right;
+    top: 300px;
+    left: 80px;
+  }
 }
