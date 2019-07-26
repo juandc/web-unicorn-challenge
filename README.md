@@ -2,7 +2,7 @@
 
 Publicación del reto: https://platzi.com/blog/web-unicorn-challenge/
 
-<img src="/SitioUnicornioWebProfesional.png" />
+<img src="/SitioUnicornioWebProfesional.png" target="_blank"/>
 
 ## Puntos extra
 
