@@ -1,6 +1,7 @@
-# Reto del Curso Profesional de Desarrollo Web
+# Reto del Curso Profesional de Desarrollo Web (2do Lugar)
 
 Publicación del reto: https://platzi.com/blog/web-unicorn-challenge/
+</br>Publicación de premiación: https://platzi.com/blog/platziretos-3-languages-challenge/
 
 <img src="/SitioUnicornioWebProfesional.png"/>
 
