@@ -16,7 +16,26 @@
 
 
 /* Tablet */
-@media (max-width: 768.98px) {
+@media (min-width: 361px) and (max-width: 768.98px) {
+  .container-custom {
+    grid-template-columns: 1fr;
+    grid-template-rows: 59px 160px 1fr 59px;
+    grid-template-areas: "header"
+                         "home"
+                         "hero"
+                         "panel";
+  }
+  .header {
+    padding-right: 0 !important;
+  }
+  .header .container {
+    background-color: white;
+    margin-left: -15px;
+    width: 105%;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    max-width: none;
+  }
 }
 
 @media (min-width: 361px) and (max-width: 1084.98px) {
