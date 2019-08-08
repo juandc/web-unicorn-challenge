@@ -16,6 +16,15 @@
 
 
 /* Tablet */
+@media (min-width: 361px) and (max-width: 575.98px) {
+  .portfolio-areaItems {
+    grid-template-columns: 18px 1fr 18px;
+  }
+  .contact h2 {
+    font-size: 2.4rem;
+  }
+}
+
 @media (min-width: 361px) and (max-width: 649.98px) {
   .container-custom {
     grid-template-rows: 59px 130px 1fr 59px;
@@ -34,6 +43,21 @@
     height: 95%;
     width: 40%;
     position: initial;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: 420px 59px 370px 59px 1fr 370px 50px;
+    grid-template-areas: "skills"
+                         "section2"
+                         "about"
+                         "section3"
+                         "portfolio"
+                         "contact"
+                         "footer";
+  }
+  .rocket img {
+    display: none;
+    animation-name: none;
   }
 }
 
@@ -57,15 +81,24 @@
     padding-right: 15px !important;
     max-width: none;
   }
+  .panel ul {
+    width: 100%;
+    position: initial;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .link1, .nolink {
+    display: none !important;
+  }
 }
 
-@media (min-width: 361px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 991.98px) {
   .portfolio-areaItems {
     grid-template-columns: 50px 1fr 50px;
   }
 }
 
-@media  (min-width: 650px) and (max-width: 991.98px) {
+@media  (max-width: 991.98px) {
   .about {
     margin: 10px;
   }
@@ -73,8 +106,8 @@
 
 @media  (min-width: 650px) and (max-width: 991.98px) {
   .rocket img {
-    height: 85px;
-    width: 85px;
+    height: 80px;
+    width: 80px;
   }
 }
 
@@ -87,7 +120,7 @@
   }
 }
 
-@media  (min-width: 650px) and (max-width: 914.98px) {
+@media  (min-width: 650px) and (max-width: 1084.98px) {
   .home h1 {
     font-size: 3rem;
     margin-left: 3.5rem;
